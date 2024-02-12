@@ -69,15 +69,21 @@ Then we estimate the mean variance with the log counts from the reads to see the
 
 ![](Figures/voom.png)
 
-Now we adjust the data for the attribute reproductive_state to examine the statistic results.
+We see that the maximum standard deviation is around two for this data. Now we adjust the data for the attribute reproductive_state to examine the statistic results.
 
 ![](Figures/stadistic_models_reproductive_state.png)
 
+We see how the data with respect to the log fold change is pretty static.
+
 ![](Figures/volcanoplot.png)
 
-In this plot we can see the three genes mor differentially expressed being these genes Acer2, Sgk1 y Kpna2-ps.
-## Visualize genes differentially expressed
+In this plot we can see the log fold change in relation with p-values and we also con see the three genes more differentially expressed being these genes Acer2, Sgk1, Kpna2-ps, Gh and Prl.
+## Visualize genes differentially expressed genes
 
 ![](Figures/heatmap.png)
 
-In this heatmap we can see the expression of the genes along different samples.
+In this heatmap we can see the expression of the genes along different samples. To this point there is not a clear or strong cluster formation based on the groups, even though it sould be something expected, it may need some kind of enrichment or some extra work. 
+
+# Conclutions
+
+This tools provide a insight that enable generatio of testable hypotheses about the molecular mechanisms underlying biological processes to identify genes or transcripts that are differentially expressed between two or more biological conditions. These hypotheses can then be further explored through experimental validation and additional studies, ultimately advancing our understanding of complex biological systems.
