@@ -36,7 +36,7 @@ The data count with the following **sra_attributes**, all of them had to be chan
 ## Data quality
 Once with the data ready we proceed to explore if there is quality problem, so we calculate assignation ratios to the genes (assigned_gene_prop), and incorporate that data to the data. After that we proceed to visualization.
 
-![[assigned_gene_prop_vs_tissue.jpg]]
+![](Figures/assigned_gene_prop_vs_tissue.jpg)
 
 ![[Figures/assigned_gene_prop_hist.png]]
 ## Filter Data
