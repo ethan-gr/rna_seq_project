@@ -4,7 +4,6 @@
 
 
 
-
 All the analysis here presented was done with the project **SRP181125** and obtained through **recount3**.
 ## About the data
 #### Study title
@@ -38,21 +37,21 @@ Once with the data ready we proceed to explore if there is quality problem, so w
 
 ![](Figures/assigned_gene_prop_vs_tissue.jpg)
 
-![[Figures/assigned_gene_prop_hist.png]]
+![](Figures/assigned_gene_prop_hist.png)
 ## Filter Data
 The data seems to have good quality, it was intended to retain values above a cutoff of 0.6, all genes had that property so we didn't cut the data to this point based on quality.
 
 Either way, looking for low expressed genes that wont benefit the analysis we calculated gene expression level means (gene_means) and visualize them as a histogram.
 
-![[hist_gene_means.png]]
+![](Figures/hist_gene_means.png)
 
 As expected too many genes were under low expressed and was hard to see the real nature of the distribution. To provide a bit more information we did the histogram with the log values.
 
-![[Figures/hist_log_gene_means.png]]
+![](Figures/hist_log_gene_means.png)
 
 Now we can see that a lot of the log values are negative which means they have expression levels under 1. We cannot continue with that many zero values, they'll produce noise. So we proposed to remove expression levels under 0.1 in order to find relevant things.
 
-![[Figures/hist_log_recovered_gene_means.png]]
+![](Figures/hist_log_recovered_gene_means.png)
 
 After the removal of low expressed genes to the data we retained 52.39%.
 ## Normalization
@@ -62,23 +61,23 @@ To reduce the incidence of false positives we normalize the data assuming the ma
 # Differential expression
 In order to confirm that there are no problems with the data were done two boxplots with the main data attributes reproductive state and tissue. And the statistic model was done considering those two attributes.
 
-![[Figures/gene_prop_vs_reproductive_state_boxplot.png]]
+![](Figures/gene_prop_vs_reproductive_state_boxplot.png)
 
-![[Figures/gene_prop_vs_tissue_boxplot.png]]
+![](Figures/Figures/gene_prop_vs_tissue_boxplot.png)
 
 Then we estimate the mean variance with the log counts from the reads to see the **mean-variance trend**.
 
-![[voom.png]]
+![](Figures/voom.png)
 
 Now we adjust the data for the attribute reproductive_state to examine the statistic results.
 
-![[stadistic_models_reproductive_state.png]]
+![](Figures/stadistic_models_reproductive_state.png)
 
-![[volcanoplot.png]]
+![](Figures/volcanoplot.png)
 
 In this plot we can see the three genes mor differentially expressed being these genes Acer2, Sgk1 y Kpna2-ps.
 ## Visualize genes differentially expressed
 
-![[Figures/heatmap.png]]
+![](Figures/heatmap.png)
 
 In this heatmap we can see the expression of the genes along different samples.
