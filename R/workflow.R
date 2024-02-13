@@ -148,9 +148,9 @@ table(de_results$adj.P.Val < 0.05)
 
 # visualize stadistic results
 plotMA(eb_results, coef = 2)
-volcanoplot(eb_results, coef = 2, highlight = 3, names = de_results$gene_name)
+volcanoplot(eb_results, coef = 2, highlight = 5, names = de_results$gene_name)
 
-de_results[de_results$gene_name %in% c("Acer2", "Sgk1", "Kpna2-ps"), ]
+de_results[de_results$gene_name %in% c("Acer2", "Sgk1", "Kpna2-ps", "Gh", "Prl"), ]
 
 
 ## ========== VISUALIZE GENES DE ===========
